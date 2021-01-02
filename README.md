@@ -3,3 +3,5 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 <br>
 chmod +x ./kubectl
 <br>
+kubectlコマンドとして実行できるように<br>
+sudo mv ./kubectl /usr/local/bin/kubectl<br>
