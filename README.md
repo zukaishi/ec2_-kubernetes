@@ -4,7 +4,7 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 chmod +x ./kubectl
 <br>
 
-## kubectlコマンドとして実行できるように
+### kubectlコマンドとして実行できるように
 sudo mv ./kubectl /usr/local/bin/kubectl<br>
 <br>
 sudo apt-get update && sudo apt-get install docker.io -y<br>
@@ -23,6 +23,13 @@ sudo -i<br>
 
 <br>
 minikube start --vm-driver=none<br>
+<br>
+kubectl create deployment --image nginx my-nginx<br>
+<br>
+kubectl get pods<br>
+<br>
+### serviceが中継することで、コンテナのポートへ通信を受け渡してくれる
+kubectl expose deployment my-nginx --port=80 --type=LoadBalancer<br>
 <br>
 
 # 参考サイト
