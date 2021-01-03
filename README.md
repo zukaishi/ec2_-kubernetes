@@ -4,19 +4,27 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 chmod +x ./kubectl
 <br>
 
-# kubectlコマンドとして実行できるように
-sudo mv ./kubectl /usr/local/bin/kubectl
+## kubectlコマンドとして実行できるように
+sudo mv ./kubectl /usr/local/bin/kubectl<br>
 <br>
-sudo apt-get update && sudo apt-get install docker.io -y
+sudo apt-get update && sudo apt-get install docker.io -y<br>
+
 <br>
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/<br>
+
 <br>
-minikube version
+minikube version<br>
+
 <br>
-sudo -i
+sudo apt-get install -y conntrack<br>
+
 <br>
-minikube start --vm-driver=none
+sudo -i<br>
+
+<br>
+minikube start --vm-driver=none<br>
 <br>
 
 # 参考サイト
-https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/
+https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/<br>
+https://www.youtube.com/watch?v=PeRE90mSHQo<br>
